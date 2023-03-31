@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>My Awesome Team!</title>
+</head>
+<body>
+    <header>
+        <h1 class="hidden">My Awesome Team</h1>
+        <img src="images/header.jpg" alt="header" id="header-pic">
+    </header>
+    <main>
+        <h1 id="title">Lovely Team Members!</h1>
+        <nav id="members_nav">
+            <ul class="members">
+                <li>
+                    <a href="#lightbox" data-member="Ryan">
+                        <div class="sprite1"></div>
+                        <div class="team-member"></div>
+                        <h5>Chen Chao</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lightbox2" data-member="Jobs"> 
+                        <div class="sprite2"></div>
+                        <div class="team-member"></div>
+                        <h5>Steve Jobs</h5>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+    <footer class="sticky_footer">
+        <h3>All Contents &copy; False</h3>
+        <h4>I Love APPLE&hearts;</h4>
+    </footer>
+
+    <!-- lightbox goes here -->
+    <section class="lightbox" id="lightbox">
+        <a href="" class="lightbox_close">x</a>
+        <article>
+            <h3 class="lb_heading"></h3>
+            <p class="lb_text"></p>
+            <p class="lb_achievement"></p>
+        </article>
+    </section>
+    <section class="lightbox2" id="lightbox2">
+        <a href="" class="lightbox_close">x</a>
+        <article>
+            <h3 class="lb_heading"></h3>
+            <p class="lb_text"></p>
+            <p class="lb_achievement"></p>
+        </article>
+    </section>
+</body>
+
+<script src="js/main.js"></script>
+<script src="js/heroes.js"></script>
+</html>

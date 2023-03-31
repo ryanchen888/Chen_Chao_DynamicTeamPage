@@ -1,0 +1,215 @@
+
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+.hidden { display: none; }
+
+html, body { height: 100% }
+
+body { 
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: white;
+}
+
+/*header section */
+header {
+    background-color: #aec6d3;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+#header-pic { 
+    width: 600px; 
+    padding: 10px 0;
+    border: 5px solid #aec6d3; 
+    border-radius: 30px;
+    opacity: 70%;
+    transition: 0.5s ease-in-out;
+}
+
+#header-pic:hover {
+    background-color: #aec6d3;
+    opacity: 50%;
+}
+
+/* main section */
+
+#title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(21, 65, 92);
+    text-align: center;
+    text-shadow: #aec6d3 3px 3px 3px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#members_nav {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.members { list-style-type: none; }
+
+.members li { 
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    margin: 10px 8px;
+    background-color: black;
+    text-align: left;
+    cursor: pointer;
+}
+
+.members li h5 {
+    position: relative;
+    color: rgb(21, 65, 92);
+    padding: 12px 8px;
+    z-index: 500;
+}
+
+.members li a { text-decoration: none; }
+
+.team-member {
+    width: 100%;
+    height: 6px;
+    background-color: #aec6d3;
+    transition: height 0.2s ease;
+    position: absolute;
+}
+
+.members li:hover .team-member { height: 70px; }
+
+article { padding: 20px; }
+
+article h3  {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+article p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sprite1 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-image: url('../images/thor-1.jpg');
+    background-size: cover;
+    margin: 0px;
+}
+
+.sprite2 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-image: url('../images/Loki-1.jpg');
+    background-size: cover;
+    margin: 0px;
+}
+
+
+.sprite1:hover { 
+    background-position-y: 0px !important; 
+    opacity: 0.5;
+}
+
+.sprite2:hover { 
+    background-position-y: 0px !important;
+    opacity: 0.5;
+}
+
+/* footer section */
+footer {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.sticky_footer {
+    position: sticky;
+    top: 100%;
+    height: 80px;
+    background-color: #aec6d3;
+}
+
+/* lightbox */
+
+.lightbox { 
+    width: 100vw; 
+    height: 100vh; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url('../images/thor-2.png');
+    background-repeat: no-repeat;
+    background-size: 55vh; 
+    background-position: 100px 100px;
+    z-index: 5000;
+    display: none;
+}
+
+.lightbox2 { 
+    width: 100vw; 
+    height: 100vh; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url('../images/loki.png');
+    background-repeat: no-repeat;
+    background-size: 55vh; 
+    background-position: 100px 100px;
+    z-index: 5000;
+    display: none;
+}
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+    color: white;
+    font-size: 3em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.lightbox_close:hover { opacity: 0.5; color: red; }
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+#lightbox2 article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_text, .lb_heading { text-align: left; }
+
+.lb_text {
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+.lightbox:target { display: block; }
+.lightbox2:target { display: block; }
